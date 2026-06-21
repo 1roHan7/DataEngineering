@@ -1,4 +1,16 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
-    "python-envs.pythonProjects": []
+    "python-envs.pythonProjects": [],
+    "python.defaultInterpreterPath": "/home/rohan/anaconda3/bin/python",
+    "python.analysis.extraPaths": [
+        "/home/rohan/anaconda3/lib/python3.12/site-packages"
+    ],
+    "git.ignoreLimitWarning": true,
+    "editor.suggest.showMethods": true,
+    "editor.suggestSelection": "first",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    }
 }

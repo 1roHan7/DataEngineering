@@ -1,0 +1,28 @@
+2025-01-01 09:00:01 INFO Application started
+2025-01-01 09:00:05 INFO Loading configuration file
+2025-01-01 09:00:07 WARNING Config value 'MAX_CONN' not set, using default
+2025-01-01 09:00:10 INFO Connecting to database
+2025-01-01 09:00:12 ERROR Database connection failed
+2025-01-01 09:00:15 INFO Retrying database connection
+2025-01-01 09:00:18 ERROR Database connection failed
+2025-01-01 09:00:22 ERROR Database connection failed
+2025-01-01 09:00:25 WARNING High memory usage detected
+2025-01-01 09:00:30 INFO Memory usage normalized
+2025-01-01 09:01:00 INFO User login successful: user_id=101
+2025-01-01 09:01:10 INFO User login successful: user_id=102
+2025-01-01 09:01:15 WARNING Disk usage above 75%
+2025-01-01 09:01:20 INFO Scheduled job started: cleanup_task
+2025-01-01 09:01:25 ERROR Failed to delete temp files
+2025-01-01 09:01:30 INFO Scheduled job completed
+2025-01-01 09:02:00 INFO API request received
+2025-01-01 09:02:02 ERROR API timeout while processing request
+2025-01-01 09:02:05 ERROR API timeout while processing request
+2025-01-01 09:02:08 INFO API request retried successfully
+2025-01-01 09:02:15 WARNING Slow response detected
+2025-01-01 09:02:30 INFO Health check passed
+2025-01-01 09:03:00 INFO Application running
+2025-01-01 09:03:10 ERROR Database connection failed
+2025-01-01 09:03:20 WARNING Disk usage above 80%
+2025-01-01 09:03:30 INFO Alert sent to admin
+2025-01-01 09:04:00 INFO Application shutdown initiated
+2025-01-01 09:04:05 INFO Application shutdown completed

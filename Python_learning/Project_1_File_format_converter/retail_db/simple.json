@@ -1,0 +1,13 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "email": "johndoe@example.com",
+  "is_active": true,
+  "hobbies": ["reading", "cycling", "hiking"],
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postal_code": "12345"
+  }
+}
