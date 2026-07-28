@@ -1,0 +1,30 @@
+2026-07-28 08:38:02,427| INFO| etl_pipeline| ============================================================
+2026-07-28 08:38:02,428| INFO| etl_pipeline| starting SuperstoreSalesETLstarted at 1785227882.4272552
+2026-07-28 08:38:02,428| INFO| etl_pipeline| ============================================================
+2026-07-28 08:38:02,429| INFO| etl_pipeline| extracting data from /home/rohan/DataEngineering/pyspark/batch_etl/data/raw_data/superstoreSales.csv 
+2026-07-28 08:38:08,904| INFO| etl_pipeline| extracted 148 rows
+2026-07-28 08:38:08,905| INFO| etl_pipeline| cleaning data now
+2026-07-28 08:38:10,028| INFO| etl_pipeline| Cleaned data completed ,count 148 remainingdropped rows = DataFrame[Row ID: int, Order ID: int, Order Date: string, Order Priority: string, Order Quantity: int, Sales: double, Discount: double, Ship Mode: string, Profit: double, Unit Price: double, Shipping Cost: double, Customer Name: string, Province: string, Region: string, Customer Segment: string, Product Category: string, Product Sub-Category: string, Product Name: string, Product Container: string, Product Base Margin: double, Ship Date: string] - DataFrame[row_id: int, order_id: int, order_priority: string, order_quantity: int, sales: double, discount: double, ship_mode: string, profit: double, unit_price: double, shipping_cost: double, customer_name: string, province: string, region: string, customer_segment: string, product_category: string, product_subcategory: string, product_name: string, product_container: string, product_base_margin: double, order_date: date, ship_date: date]
+2026-07-28 08:38:10,029| INFO| etl_pipeline| adding derived columns
+2026-07-28 08:38:10,494| INFO| etl_pipeline| derived columns addedderived count is 148
+2026-07-28 08:38:10,743| INFO| etl_pipeline| creating 
+2026-07-28 08:38:10,844| INFO| etl_pipeline| writing to output path /home/rohan/DataEngineering/pyspark/batch_etl/data/raw_data/data/processed
+2026-07-28 08:38:16,851| INFO| etl_pipeline| Pipeline is completed in 14.42s
+2026-07-28 08:38:16,852| ERROR| etl_pipeline| pipline failed with unhandled exception
+Traceback (most recent call last):
+  File "/home/rohan/DataEngineering/pyspark/batch_etl/main.py", line 51, in run_pipeline
+    logger.info('=', * 60)
+TypeError: Value after * must be an iterable, not int
+2026-07-28 08:42:51,633| INFO| etl_pipeline| ============================================================
+2026-07-28 08:42:51,634| INFO| etl_pipeline| starting SuperstoreSalesETLstarted at 1785228171.6337447
+2026-07-28 08:42:51,634| INFO| etl_pipeline| ============================================================
+2026-07-28 08:42:51,634| INFO| etl_pipeline| extracting data from /home/rohan/DataEngineering/pyspark/batch_etl/data/raw_data/superstoreSales.csv 
+2026-07-28 08:42:58,538| INFO| etl_pipeline| extracted 148 rows
+2026-07-28 08:42:58,539| INFO| etl_pipeline| cleaning data now
+2026-07-28 08:42:59,925| INFO| etl_pipeline| Cleaned data completed ,count 148 remainingdropped rows = DataFrame[Row ID: int, Order ID: int, Order Date: string, Order Priority: string, Order Quantity: int, Sales: double, Discount: double, Ship Mode: string, Profit: double, Unit Price: double, Shipping Cost: double, Customer Name: string, Province: string, Region: string, Customer Segment: string, Product Category: string, Product Sub-Category: string, Product Name: string, Product Container: string, Product Base Margin: double, Ship Date: string] - DataFrame[row_id: int, order_id: int, order_priority: string, order_quantity: int, sales: double, discount: double, ship_mode: string, profit: double, unit_price: double, shipping_cost: double, customer_name: string, province: string, region: string, customer_segment: string, product_category: string, product_subcategory: string, product_name: string, product_container: string, product_base_margin: double, order_date: date, ship_date: date]
+2026-07-28 08:42:59,926| INFO| etl_pipeline| adding derived columns
+2026-07-28 08:43:00,501| INFO| etl_pipeline| derived columns addedderived count is 148
+2026-07-28 08:43:00,783| INFO| etl_pipeline| creating 
+2026-07-28 08:43:00,917| INFO| etl_pipeline| writing to output path /home/rohan/DataEngineering/pyspark/batch_etl/data/processed
+2026-07-28 08:43:06,121| INFO| etl_pipeline| Pipeline is completed in 14.49s
+2026-07-28 08:43:06,121| INFO| etl_pipeline| ============================================================
