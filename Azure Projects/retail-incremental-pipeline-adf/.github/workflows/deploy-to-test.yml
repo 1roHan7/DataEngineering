@@ -1,0 +1,35 @@
+name: Deploy ADF to Test Environment
+
+# Runs whenever changes land on the adf_publish branch
+# (ADF automatically maintains this branch with deployable ARM templates)
+on:
+  push:
+    branches:
+      - adf_publish
+
+jobs:
+  deploy-to-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to Azure
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy ARM Template to Test Data Factory
+        uses: azure/arm-deploy@v2
+        with:
+          subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          resourceGroupName: rg-retail-incremental-pipeline-test
+          template: ./ARMTemplateForFactory.json
+          parameters: >
+            ./ARMTemplateParametersForFactory.json
+            factoryName=adf-retail-incr-test-rk2026
+            ls_blob_storage_accountKey=${{ secrets.TEST_STORAGE_ACCOUNT_KEY }}
+
+      - name: Logout from Azure
+        run: az logout
+        if: always()
