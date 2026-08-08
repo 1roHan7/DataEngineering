@@ -45,7 +45,7 @@
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"description": "Incremental load pipeline: file-triggered, watermark-based merge into orders table..",
+				"description": "Incremental load pipeline: file-triggered, watermark-based merge into orders table.",
 				"activities": [
 					{
 						"name": "Get Metadata1",
