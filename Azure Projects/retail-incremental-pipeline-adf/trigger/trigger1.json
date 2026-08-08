@@ -1,0 +1,28 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_incremental_orders_load",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"triggerFileName": "@trigger().outputs.body.fileName"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/raw-data/blobs/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/e4671fe7-d665-48c5-b577-2fe44d9eb072/resourceGroups/rg-retail-incremental-pipeline/providers/Microsoft.Storage/storageAccounts/retailincstorage2026rk",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

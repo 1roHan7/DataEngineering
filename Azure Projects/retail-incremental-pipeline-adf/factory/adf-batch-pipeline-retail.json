@@ -1,0 +1,15 @@
+{
+	"name": "adf-batch-pipeline-retail",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f438966f-6ba0-4a53-9a1d-a82192cc489b",
+		"tenantId": "ec64c985-7f6d-42a2-a7fb-1e4ebc940586"
+	}
+}

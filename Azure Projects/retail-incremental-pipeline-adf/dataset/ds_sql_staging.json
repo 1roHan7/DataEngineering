@@ -1,0 +1,98 @@
+{
+	"name": "ds_sql_staging",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "row_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "order_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "order_date",
+				"type": "date"
+			},
+			{
+				"name": "order_priority",
+				"type": "varchar"
+			},
+			{
+				"name": "order_quantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "sales",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "discount",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "ship_mode",
+				"type": "varchar"
+			},
+			{
+				"name": "profit",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "unit_price",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "shipping_cost",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "customer_name",
+				"type": "varchar"
+			},
+			{
+				"name": "province",
+				"type": "varchar"
+			},
+			{
+				"name": "region",
+				"type": "varchar"
+			},
+			{
+				"name": "customer_segment",
+				"type": "varchar"
+			},
+			{
+				"name": "product_category",
+				"type": "varchar"
+			},
+			{
+				"name": "product_subcategory",
+				"type": "varchar"
+			},
+			{
+				"name": "product_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "staging_orders"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
