@@ -1,6 +1,7 @@
 {
 	"name": "pl_tumbling_window_load",
 	"properties": {
+		"description": "Incremental load pipeline: hourly tumbling window, re-scans container, watermark-protected against duplication.",
 		"activities": [
 			{
 				"name": "Get Metadata1",
