@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-batch-pipeline-retail"
+		},
+		"ls_blob_storage_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "sql-retail-incr-rk2026.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "retail-incremental-pipeline"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "rohanbisht"
+		},
+		"ls_key_vault_properties_typeProperties_baseUrl": {
+			"value": "https://kv-retail-incr-rk2026.vault.azure.net/"
+		},
+		"trigger1_properties_pl_incremental_orders_load_parameters_triggerFileName": {
+			"value": "@trigger().outputs.body.fileName"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/e4671fe7-d665-48c5-b577-2fe44d9eb072/resourceGroups/rg-retail-incremental-pipeline/providers/Microsoft.Storage/storageAccounts/retailincstorage2026rk"
+		}
+	}
+}
