@@ -2,3 +2,7 @@ myenv
 .json
 .csv
 .xlsx
+.log
+logs
+config.yaml
+.yml

@@ -1,7 +1,4 @@
-# Learning and creating new basic python program
+# Learning and creating new basic python program and framework
 
-~~~
 
-~~~
 
->1. 
