@@ -1,7 +1,7 @@
 {
 	"name": "pl_incremental_orders_load",
 	"properties": {
-		"description": "Incremental load pipeline: file-triggered, watermark-based merge into orders table..",
+		"description": "Incremental load pipeline: file-triggered, watermark-based merge into orders table.",
 		"activities": [
 			{
 				"name": "Get Metadata1",
